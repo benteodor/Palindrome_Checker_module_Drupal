@@ -1,0 +1,13 @@
+<?php 
+
+/**
+ * Implements hook_help().
+ */
+function check_palindrome_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+    switch ($route_name) {
+      // Provide help for the module's help page.
+      case 'help.page.check_palindrome':
+        return '<p>' . t('The Check Palindrome module allows users to input a number or string and check whether it is a palindrome.') . '</p>';
+    }
+  }
+  
